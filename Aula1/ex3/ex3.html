@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form action="submit.html" method="get">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+                <label for="age">Age:</label>
+                <input type="radio" name="age">&lt18
+                <input type="radio" name="age">19-35
+                <input type="radio" name="age">36-48
+                <input type="radio" name="age">&gt49
+            </p>
+            <p>
+                <label for="profession">Profession:</label><br>
+                <input type="text" name="profession" id="profession" list="professions">
+                <datalist id="professions">
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Engineer</option>
+                    <option>Doctor</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="country">Country:</label><br>
+                <select name="country" id="country" required>
+                    <option>Portugal</option>
+                    <option>Spain</option>
+                    <option>France</option>
+                </select>
+            </p>
+            <p>
+                <label for="interests">Interests:</label><br>
+                <input type="checkbox" name="interests">Sports
+                <input type="checkbox" name="interests">Videogames
+                <input type="checkbox" name="interests">Books
+            </p>
+        </form>
+    </body>
+</html>

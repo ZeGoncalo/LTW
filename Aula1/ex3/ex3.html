@@ -6,41 +6,49 @@
     </head>
     <body>
         <h1>Form</h1>
-        <form action="submit.html" method="get">
+        <form action="ex3.html" method="get">
             <p>
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" required>
             </p>
             <p>
-                <label for="age">Age:</label>
-                <input type="radio" name="age">&lt18
-                <input type="radio" name="age">19-35
-                <input type="radio" name="age">36-48
-                <input type="radio" name="age">&gt49
+                <label>Age:</label><br>
+                <input type="radio" name="age" value="<18">&lt;18
+                <input type="radio" name="age" value="19-35">19–35
+                <input type="radio" name="age" value="36-48">36–48
+                <input type="radio" name="age" value=">49">&gt;49
             </p>
             <p>
                 <label for="profession">Profession:</label><br>
                 <input type="text" name="profession" id="profession" list="professions">
                 <datalist id="professions">
-                    <option>Student</option>
-                    <option>Teacher</option>
-                    <option>Engineer</option>
-                    <option>Doctor</option>
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Engineer">Engineer</option>
+                    <option value="Doctor">Doctor</option>
                 </datalist>
             </p>
             <p>
                 <label for="country">Country:</label><br>
                 <select name="country" id="country" required>
-                    <option>Portugal</option>
-                    <option>Spain</option>
-                    <option>France</option>
+                    <option value="">-- Select a country --</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Spain">Spain</option>
+                    <option value="France">France</option>
                 </select>
             </p>
             <p>
-                <label for="interests">Interests:</label><br>
-                <input type="checkbox" name="interests">Sports
-                <input type="checkbox" name="interests">Videogames
-                <input type="checkbox" name="interests">Books
+                <label>Interests:</label><br>
+                <input type="checkbox" name="interests" value="Sports">Sports
+                <input type="checkbox" name="interests" value="Videogames">Videogames
+                <input type="checkbox" name="interests" value="Books">Books
+            </p>
+            <p>
+                <label for="about">How did you find out about us?</label><br>
+                <textarea name="about" id="about" rows="4" cols="40"></textarea>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
             </p>
         </form>
     </body>
